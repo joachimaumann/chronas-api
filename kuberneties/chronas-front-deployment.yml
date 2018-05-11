@@ -20,14 +20,14 @@ spec:
             port: 80
           initialDelaySeconds: 5
           timeoutSeconds: 1
-          periodSeconds: 15
+          periodSeconds: 40
         livenessProbe:
           httpGet:
             path: /v1/health
             port: 80
           initialDelaySeconds: 15
           timeoutSeconds: 1
-          periodSeconds: 15      
+          periodSeconds: 40      
         env:
         - name: MONGO_HOST
           valueFrom:
